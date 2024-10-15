@@ -9,5 +9,5 @@
   "Attachment":"Link",
   "Bug creator":"Borodin Andrey",
   "Assigned to":"Alex Tomelo",
-  "Bug status":"in work"
+  "Bug status":"in procces"
 
