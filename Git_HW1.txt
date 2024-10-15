@@ -1,0 +1,203 @@
+Git HW1
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+https://github.com/Avik-81/Json
+
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+Git clone https://github.com/Avik-81/Json.git
+
+ 6. Внутри локального JSON создать файл “new.json”.
+touch new.json
+
+ 7. Добавить файл под гит.
+git add new.json
+
+ 8. Закоммитить файл.
+git commit -m ‘add new.json’
+
+ 9. Отправить файл на внешний GitHub репозиторий.
+git push
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+vim new.json
+{
+        "NFS":"Borodin Andrey Evgen'evich",
+        "Age":43,
+        "Pets QTY":2,
+        "Expected salary":"$600"
+}
+:wq
+
+ 11. Отправить изменения на внешний репозиторий.
+git commit -am "modif new.json" && git push
+
+ 12. Создать файл preferences.json
+touch preferences.json
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+vim preferences.json
+{
+        "my favorite movie":"STAR WARS",
+        "my favorite serious":"Supernatural",
+        "my favorite food":"stake",
+        "my favorite year time":"summer",
+        "favorite country from my wishlist":"New York,USA"
+}
+:wq
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+vim sklls.json
+{
+        "1st skill":"Testing Theory",
+        "2nd skill":"Terminal",
+        "3rd skill":"Git",
+        "4th skill":"Postman",
+        "5th skill":"SQL",
+        "6th skill":"Functional testing",
+        "7th skill":"Non functional testing"
+}
+:wq
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+git commit -am "add pref.json, skills.json" && git push
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+https://github.com/Avik-81/Json/blob/main/bug_report.json
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Click commit changes
+
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+{
+  "ID":247,
+  "Date":"13.06.2024",
+  "Severity":"minor",
+  "Env":"WIN 11",
+  "Summary":"The page is not scrolled to the trading instrument widget in the menu section [Modalità di trading] (Products and services) after clicking [link] when IT language is selected",
+  "Steps":"1. Navigate to capital.com 2. Select any license, eg SCB, country eg. Albania 3. Select IT language 4. Hover over the menu section [Modalità di trading] (Products and services) 5. Click the menu item [Tariffe e commissioni ] (Charges & fees) 6. Scroll down to the “Trading” block 7. Click the [link] link opposite The spread/Overnight funding adjustment",
+  "Expected result":"The page is scrolled to trading instrument widget",
+  "Actual result":"The page is not scrolled to trading instrument widget",
+  "Attachment":"Link",
+  "Bug creator":"Borodin Andrey",
+  "Assigned to":"Alex Tomelo",
+  "Bug status":"in work"
+}
+ 
+19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Click commit changes
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+git pull
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+https://github.com/Avik-81/XML
+
+ 22. Клонировать репозиторий XML на локальный компьютер.
+git clone https://github.com/Avik-81/XML.git
+
+ 23. Внутри локального XML создать файл “new.xml”.
+touch new.xml
+
+ 24. Добавить файл под гит.
+git add .
+
+ 25. Закоммитить файл.
+git commit -m “add new.xml”
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+git push
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+vim new.xml
+<body>
+        <NFS>Borodin Andrey Evgen'evich</NFS>
+        <Age>43</Age>
+        <Pets_QTY>2</Pets_QTY>
+        <Expected_salary>$600</Expected_salary>
+</body>
+:wq
+
+ 28. Отправить изменения на внешний репозиторий.
+git commit -am "mod new.xml" && git push
+
+ 29. Создать файл preferences.xml
+touch preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+vim preferences.xml
+<body>
+        <my_favorite_movie>STAR WARS</my_favorite_movie>
+        <my_favorite_serious>Supernatural</my_favorite_serious>
+        <my_favorite_food>stake</my_favorite_food>
+        <my_favorite_year_time>summer</my_favorite_year_time>
+        <favorite_country_from_my_wishlist>New York,USA</favorite country from my wishlist>
+</body>
+:wq
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+vim skills.xml
+<body>
+        <ID>247</ID>
+        <Date>13.06.2024</Date>
+        <Severity>minor</Severity>
+        <Env>WIN 11</Env>
+        <Summary>The page is not scrolled to the trading instrument widget in the menu section [Modalità di trading] (Products and services) after clicking [link] when IT language is selected</Summary>
+        <Steps>
+                1. Navigate to capital.com
+                2. Select any license, eg SCB, country eg. Albania
+                3. Select IT language
+                4. Hover over the menu section [Modalità di trading] (Products and services)
+                5. Click the menu item [Tariffe e commissioni ] (Charges & fees)
+                6. Scroll down to the “Trading” block
+                        7. Click the [link] link opposite The spread/Overnight funding adjustment"</Steps>
+        <Expected_result>The page is scrolled to trading instrument widget</Expected_result>
+        <Actual_result>The page is not scrolled to trading instrument widget</Actual_result>
+        <Attachment>Link</Attachment>
+        <Bug_creator>Borodin Andrey</Bug_creator>
+        <Assigned_to>Alex Tomelo</Assigned_to>
+        <Bug_status>in work</Bug_status>
+</body>
+:wq
+
+ 32. Сделать коммит в одну строку.
+git add . && git commit -m "add pref&skills"
+
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+git push
+
+ 34. На веб интерфейсе создать файл bug_report.xml.
+https://github.com/Avik-81/XML/blob/main/bug_report.xml.
+
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Click “commit changes” button
+
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+<body>
+  <ID>247</ID>:
+  <Date>13.06.2024</Date>
+  <Severity>minor</Severity>
+  <Env>WIN 11</Env>
+  <Summary>The page is not scrolled to the trading instrument widget in the menu section [Modalità di trading] (Products and services) after clicking [link] when IT language is selected</Summary>
+  <Steps>1. Navigate to capital.com
+      2. Select any license, eg SCB, country eg. Albania 
+      3. Select IT language 
+      4. Hover over the menu section [Modalità di trading] (Products and services) 
+      5. Click the menu item [Tariffe e commissioni ] (Charges & fees) 
+      6. Scroll down to the “Trading” block 
+      7. Click the [link] link opposite The spread/Overnight funding adjustment</Steps>
+  <Expected_result>The page is scrolled to trading instrument widget</Expected_result>
+  <Actual_result>The page is not scrolled to trading instrument widget<Actual_result>
+  <Attachment>Link</Attachment>
+  <Bug_creator>Borodin Andrey<Bug_creator>
+  <Assigned_to>Alex Tomelo</Assigned_to>
+  <Bug_status>in work</Bug_status>
+</body>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Click “commit changes” button
+
+ 38. Синхронизировать внешний и локальный репозиторий XML
+git pull
+
